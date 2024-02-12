@@ -1,0 +1,15 @@
+.CoinSpin {
+    position: relative;
+}
+
+h3 {
+    position: absolute;
+    color: var(--neon-green);
+    z-index: 1;
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    width: 300px;
+    top: 30%;
+    opacity: .8;
+}
