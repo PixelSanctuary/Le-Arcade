@@ -7,9 +7,9 @@ h3 {
     color: var(--neon-green);
     z-index: 1;
     font-size: 32px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     width: 300px;
-    top: 30%;
+    top: 39%;
     opacity: .8;
+    font-family: 'Protest Revolution', sans-serif;
 }

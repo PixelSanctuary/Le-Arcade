@@ -4,7 +4,7 @@ import './Coin.css';
 function Coin() {
   const [isSpinning, setIsSpinning] = useState(false);
   const [randomNumber,setRandomNumber] = useState(0);
-  const star = 'l';
+
 
   const handleClick = () => {
     setIsSpinning(true);
@@ -24,11 +24,18 @@ function Coin() {
     }, randomDuration);
   };
 
+  const handleKeyPress = (event) => {
+    // Check if the pressed key is either 'Enter' or 'Space'
+    if ((event.key === 'Enter' || event.key === ' ') && !isSpinning) {
+      event.preventDefault(); // Prevent the default action for the key press
+      handleClick(); // Trigger the handleClick function
+    }
+  };
+
   return (
-    <div className={`Coin ${isSpinning ? 'spinning' : ''}`} onClick={handleClick}>
+    <div className={`Coin ${isSpinning ? 'spinning' : ''}`} onClick={handleClick} onKeyDown={handleKeyPress} role="button" tabIndex="0">
       { !isSpinning && <h3>CLICK TO SPIN</h3>}
       <div className={`Coin__side ${isSpinning ? 'Coin__side--switching' : (randomNumber % 2)? 'Coin__side--front' : 'Coin__side--back'}`}>
-      {star}
       </div>
     </div>
   );
