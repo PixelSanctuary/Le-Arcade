@@ -1,4 +1,7 @@
 .Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     border: 0px;
     border-color: var(--neon-green) !important;
     border-bottom: 3px solid var(--neon-green);
@@ -10,4 +13,13 @@ h1 {
     font-family: 'Press Start 2P', system-ui;
     font-size: 24px;
     color: var(--neon-green);
+}
+
+.Header svg {
+    cursor: pointer;
+    color: var(--neon-green);
+}
+
+.Header svg:hover {
+    color: var(--neon-greenGlow);
 }
