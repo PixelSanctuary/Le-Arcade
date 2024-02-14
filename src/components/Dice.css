@@ -1,0 +1,134 @@
+.dice {
+    width: 150px;
+    height: 150px;
+    border-left: 3px solid var(--neon-red);
+    border-top: 3px solid var(--neon-green);
+    border-bottom: 3px solid var(--neon-blue);
+    border-right: 3px solid var(--neon-yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 2s;
+    position: relative;
+    border-radius: 3px;
+  }
+  
+  .dice.rolling {
+    animation: roll-animation 2s linear;
+  }
+  
+  @keyframes roll-animation {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .face {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .face-6,.face-4,.face-2,.face-5{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    height: 100%;
+  }
+
+  .face-6 .dot {
+    width: 35%;
+    height: 47%;
+    background-color: var(--neon-pink);
+  }
+
+  .face-4 .dot {
+    width: 35%;
+    height: 35%;
+    background-color: var(--neon-yellow);
+  }
+
+  .face-2 .dot {
+    width: 38%;
+    height: 17%;
+    background-color: var(--neon-green);
+  }
+
+  .face-1,.face-3 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .face-1 .dot, .face-3 .dot {
+    margin: auto;
+    width: 18%;
+    height: 18%;
+    background-color: var(--neon-red);
+  }
+
+  .face-3 .dot { 
+    background-color: var(--neon-blue) !important;
+  }
+  .face-3 .dot:first-child {
+    margin-top: 55%;
+    margin-left: 15%;
+  }
+
+  .face-3 .dot:nth-child(2) {
+    margin-top: 30%;
+  }
+
+  .face-3 .dot:last-child {
+    margin-top: 55%;
+    margin-right: 15%;
+  }
+
+  .face-5 .dot {
+    width: 36%;
+    height: 36%;
+    background-color: var(--neon-purple);
+  }
+
+  .face-5 .dot:last-child {
+    position: absolute;
+    width: 27px !important;
+    height: 27px !important;
+    top: 42%;
+    left: 42%;
+  }
+
+  .dot {
+    margin: auto;
+    width: 35%;
+    height: 50%;
+    background-color: var(--neon-red);
+    border-radius: 100%;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dice svg {
+    width: 100%;
+    height: 100%;
+    animation: disco-animation 5s linear infinite;
+  }
+
+  @keyframes disco-animation {
+    0% { color: var(--neon-red); }
+    16% { color: var(--neon-green); }
+    32% { color: var(--neon-blue); }
+    48% { color: var(--neon-yellow); }
+    64% { color: var(--neon-purple); }
+    80% { color: var(--neon-pink); }
+    100% { color: var(--neon-red); }
+  }
+  
