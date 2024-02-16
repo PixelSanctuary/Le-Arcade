@@ -1,0 +1,34 @@
+.Wheel {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .spinner {
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(
+      #FF0000 0%,
+      #00FF00 20%,
+      #0000FF 40%,
+      #FFFF00 60%,
+      #FF00FF 80%,
+      #FF0000 100%
+    );
+    border-radius: 50%;
+  }
+  
+  button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .spinning {
+    transition: transform 5s cubic-bezier(0.15, 0.67, 0.83, 0.67);
+  }
+  
