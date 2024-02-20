@@ -21,6 +21,11 @@ function Menu() {
       icon: 'RGB'
     },
     {
+      name: 'Disco Dice',
+      id: 'Disco_Dice',
+      icon: 'disco'
+    },
+    {
       name: 'Spin Wheel',
       id: 'Spin_Wheel',
       icon: 'wheel'
@@ -28,7 +33,7 @@ function Menu() {
     {
       name: 'Dice Roll',
       id: 'Dice_Roll',
-      icon: 'diece'
+      icon: 'dice'
     },
   ];
 

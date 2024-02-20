@@ -1,0 +1,114 @@
+.GridDice {
+    width: 150px;
+    height: 150px;
+    position: relative;   
+    border-left: 3px solid var(--neon-red);
+    border-top: 3px solid var(--neon-green);
+    border-bottom: 3px solid var(--neon-blue);
+    border-right: 3px solid var(--neon-yellow);
+    border-radius: 3px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .GridDice-0 {
+    background-color: var(--neon-red);
+  }
+  
+  .GridDice > div {
+    width: 50%;
+    height: 50%;
+  }
+  
+  .Swapping {
+    background-color: transparent;
+    animation: border-disco-animation 4s linear infinite forwards;
+  }
+  
+  .side1 { background-color: var(--neon-red); }
+  .side2 { background-color: var(--neon-green); }
+  .side3 { background-color: var(--neon-blue); }
+  .side4 { background-color: var(--neon-yellow); }
+  
+  .side1-disco {
+    animation: red-yellow 4s linear infinite forwards;
+  }
+  
+  .side2-disco {
+    animation: green-red 4s linear infinite forwards;
+  }
+  
+  .side3-disco {
+    animation: blue-green 4s linear infinite forwards;
+  }
+  
+  .side4-disco {
+    animation: yellow-blue 4s linear infinite backwards;
+  }
+    
+  @keyframes red-yellow {
+    0% { background-color: var(--neon-red); }
+    25% { background-color: var(--neon-green); }
+    50% { background-color: var(--neon-blue); }
+    75% { background-color: var(--neon-yellow); }
+    100% { background-color: var(--neon-red); }
+  }
+  
+  @keyframes green-red {
+    0% { background-color: var(--neon-green); }
+    25% { background-color: var(--neon-blue); }
+    50% { background-color: var(--neon-yellow); }
+    75% { background-color: var(--neon-red); }
+    100% { background-color: var(--neon-green); }
+  }
+  
+  @keyframes blue-green {
+    0% { background-color: var(--neon-blue); }
+    25% { background-color: var(--neon-yellow); }
+    50% { background-color: var(--neon-red); }
+    75% { background-color: var(--neon-green); }
+    100% { background-color: var(--neon-blue); }
+  }
+  
+  @keyframes yellow-blue {
+    0% { background-color: var(--neon-yellow); }
+    25% { background-color: var(--neon-red); }
+    50% { background-color: var(--neon-green); }
+    75% { background-color: var(--neon-blue); }
+    100% { background-color: var(--neon-yellow); }
+  }
+
+  @keyframes border-disco-animation {
+    0% { 
+        border-left: 3px solid var(--neon-red);
+        border-top: 3px solid var(--neon-green);
+        border-bottom: 3px solid var(--neon-blue);
+        border-right: 3px solid var(--neon-yellow); 
+    }
+    25% {
+        border-left: 3px solid var(--neon-yellow);
+        border-top: 3px solid var(--neon-red);
+        border-bottom: 3px solid var(--neon-green);
+        border-right: 3px solid var(--neon-blue);
+    }
+    50% {
+        border-left: 3px solid var(--neon-blue);
+        border-top: 3px solid var(--neon-yellow);
+        border-bottom: 3px solid var(--neon-red);
+        border-right: 3px solid var(--neon-green);   
+    }
+    75% {
+        border-left: 3px solid var(--neon-green);
+        border-top: 3px solid var(--neon-blue);
+        border-bottom: 3px solid var(--neon-yellow);
+        border-right: 3px solid var(--neon-red);         
+    }
+    100% {      
+        border-left: 3px solid var(--neon-red);
+        border-top: 3px solid var(--neon-green);
+        border-bottom: 3px solid var(--neon-blue);
+        border-right: 3px solid var(--neon-yellow); 
+    }
+}
+
+  
