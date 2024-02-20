@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Le-Arcade/static/css/main.cdb27cbb.css",
-    "main.js": "/Le-Arcade/static/js/main.7490a1f7.js",
+    "main.css": "/Le-Arcade/static/css/main.c57eaadc.css",
+    "main.js": "/Le-Arcade/static/js/main.b523b9e2.js",
     "static/media/blur.svg": "/Le-Arcade/static/media/blur.110244091b35e2f0aec2.svg",
     "index.html": "/Le-Arcade/index.html",
     "static/media/star.svg": "/Le-Arcade/static/media/star.7b137881e9006edc3806.svg",
     "static/media/bolt.svg": "/Le-Arcade/static/media/bolt.2ce9fb0c6164d557248d.svg",
-    "main.cdb27cbb.css.map": "/Le-Arcade/static/css/main.cdb27cbb.css.map",
-    "main.7490a1f7.js.map": "/Le-Arcade/static/js/main.7490a1f7.js.map"
+    "main.c57eaadc.css.map": "/Le-Arcade/static/css/main.c57eaadc.css.map",
+    "main.b523b9e2.js.map": "/Le-Arcade/static/js/main.b523b9e2.js.map"
   },
   "entrypoints": [
-    "static/css/main.cdb27cbb.css",
-    "static/js/main.7490a1f7.js"
+    "static/css/main.c57eaadc.css",
+    "static/js/main.b523b9e2.js"
   ]
 }
