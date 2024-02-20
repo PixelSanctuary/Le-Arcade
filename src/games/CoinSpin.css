@@ -2,14 +2,20 @@
     position: relative;
 }
 
-h3 {
+.CoinSpin h3 {
     position: absolute;
     color: var(--neon-green);
     z-index: 1;
     font-size: 32px;
     text-align: center;
-    width: 300px;
+    width: 250px;
     top: 39%;
     opacity: .8;
     font-family: 'Protest Revolution', sans-serif;
+}
+
+.CoinSpin h3:hover {
+    cursor: pointer;
+    color: var(--neon-greenGlow);
+    text-shadow: .3px .3px 1px var(--neon-greenGlow);
 }

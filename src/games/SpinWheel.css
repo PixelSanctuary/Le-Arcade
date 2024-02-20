@@ -1,0 +1,16 @@
+.SpinWheel {
+    position: relative;
+}
+
+.SpinWheel .pointer {
+    position: absolute;
+    top: 90%;
+    left: 48.5%;
+    width: 5%;
+    height: 13.5%;
+    transform-origin: center;
+    background: #fff;
+    z-index: 10;
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+  }

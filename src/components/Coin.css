@@ -1,11 +1,12 @@
 .Coin {
     /* Set the perspective to create the 3D effect */
-    width: 300px; /* Set the width of the coin */
-    height: 300px; /* Set the height of the coin */
+    width: 240px; /* Set the width of the coin */
+    height: 240px; /* Set the height of the coin */
     margin: auto;
     position: relative;
     border-radius: 50%;
     overflow: hidden;
+    cursor: pointer;
   }
   
   .Coin__side {

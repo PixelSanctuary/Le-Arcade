@@ -7,6 +7,7 @@
     border-bottom: 3px solid var(--neon-green);
     padding: 8px;
     margin-bottom: 8px;
+    z-index: 30;
 }
 
 h1 {

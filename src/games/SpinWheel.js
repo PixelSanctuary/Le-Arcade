@@ -5,6 +5,7 @@ function SpinWheel() {
   return (
     <div className="SpinWheel">
       <Wheel/>
+      <div className="pointer"></div>
     </div>
   );
 }
