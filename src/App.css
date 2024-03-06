@@ -56,8 +56,18 @@ p,h1,h2,h3,h4,h5,h6{
   color: var(--neon-green);
   margin-top: 8px;
   margin-bottom: 8px;
+  cursor: default;
 }
 
 li {
   color: var(--neon-green);
+}
+
+a {
+  color: var(--neon-green);
+}
+
+a:hover {
+  color: var(--neon-greenGlow);
+  text-shadow: .3px .3px 1px var(--neon-greenGlow);
 }

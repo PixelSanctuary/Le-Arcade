@@ -1,6 +1,7 @@
 import './Menu.css';
 import React from 'react';
 import { useAppContext } from '../store/AppContext';
+import { constants } from '../helpers/constanst';
 
 function Menu() {
   const { state, dispatch } = useAppContext();
@@ -9,33 +10,7 @@ function Menu() {
     dispatch({ type: 'SET_GAME', payload: game });
   };
 
-  const gamesList = [
-    {
-      name: 'Coin Toss',
-      id: 'Coin_Toss',
-      icon: 'coin'
-    },
-    {
-      name: 'RGB Spin',
-      id: 'RGB_Spin',
-      icon: 'RGB'
-    },
-    {
-      name: 'Disco Dice',
-      id: 'Disco_Dice',
-      icon: 'disco'
-    },
-    {
-      name: 'Spin Wheel',
-      id: 'Spin_Wheel',
-      icon: 'wheel'
-    },
-    {
-      name: 'Dice Roll',
-      id: 'Dice_Roll',
-      icon: 'dice'
-    },
-  ];
+  const gamesList = constants?.gamesList;
 
   return (
     <div className="Menu">

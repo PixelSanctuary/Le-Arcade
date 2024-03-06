@@ -1,4 +1,5 @@
 .Header {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,4 +24,26 @@ h1 {
 
 .Header svg:hover {
     color: var(--neon-greenGlow);
+}
+
+.HeaderDropDown {
+    position: absolute;
+    background-color: black;
+    top: 60px;
+    left: 0px;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-items: end;
+}
+
+.HeaderDropDown-List {
+    list-style-type: none;
+}
+
+.HeaderDropDown li {
+    text-align: right;
+    margin-bottom: 0px;
+    padding: 12px;    
 }

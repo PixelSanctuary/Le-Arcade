@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import { useAppContext } from '../store/AppContext';
+import { constants } from '../helpers/constanst';
 import './Header.css';
 
 function Header() {
   const [isMenuExpanded, setIsMenuExpanded] = useState(false);
   const { state, dispatch } = useAppContext();
+  const gamesList =  constants?.gamesList;
 
   const setGame = (game) => {
     dispatch({ type: 'SET_GAME', payload: game });
+    setIsMenuExpanded(false);
   };
 
   const toggleMenu = () => {
@@ -58,6 +61,13 @@ function Header() {
       {homeIcon}
       <h1>Le Arcade</h1>
       {isMenuExpanded ? menuExpanded : menuCollapsed}
+      {isMenuExpanded && <section className='HeaderDropDown'>
+      <ul className='HeaderDropDown-List'>
+        {gamesList.map((game, index) => (
+          <li key={index} onClick={() => setGame(game.id)} >{game.name}</li>
+        ))}
+      </ul>
+      </section>}
     </div>
   );
 }
